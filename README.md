@@ -53,12 +53,12 @@ Execution Order and Instructions:
 7.	Start backend server
 •	cd DATASTORE
 •	node index.js & (to let server run in the background and continue)
-11.	Post Data to Database
+8. 	Post Data to Database
 •	Script: postToDataBase.js
 •	Location: ./fetcher-extractor/postToDataBase.js
 •	Command: node ./fetcher-extractor/postToDataBase.js
 •	Purpose: Uploads the final filtered and enriched profile data to a database.
-12. Run Datastore and Visualisation
+9. Run Datastore and Visualisation
 •	datastore-frontend/run_DF.sh 
 
 Conclusion: Follow this guide to manually execute each script in the specified order. Ensure that each script's output file is correctly produced before proceeding to the next step to maintain data integrity and flow consistency.
