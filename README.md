@@ -3,11 +3,37 @@
 ## Overview
 
 This project is aimed at scraping LinkedIn profiles, extracting relevant information, filtering it, and storing it in a database. Below are the detailed instructions to set up and run the project.
+## Run Project
+1. **Check Data.json**
+   - Verify the existence of `Data.json` file that contains all the content of the current database.
+
+2. **Run**
+   - Execute the following commands:
+     The following commands will run *Dependencies Download* and *URL Frontier + Fetcher + Extractor*
+
+     ```
+     chmod +x run.sh
+     ```
+     ```
+     ./run.sh
+     ```
+     The following commands will run dependencies download
+
+3. **Run Datastore and Visualization Separately**
+   - Execute the following commands:
+     ```
+     chmod +x run_datastore_frontend.sh
+     ```
+     ```
+     ./datastore-frontend/run_DF.sh
+     ```
+In case this didn't work, this is a manual step by step
 
 ## Prerequisites
 
 - Node.js must be installed on your computer.
 - Ensure all project dependencies are installed. If not, navigate to your project directory in the command line and run `npm install`.
+- Verify that all scripts are correctly set up to export their main functions and handle file I/O operations asynchronously.
 
 ## Execution Order and Instructions
 
@@ -16,7 +42,7 @@ This project is aimed at scraping LinkedIn profiles, extracting relevant informa
    - Location: `./URL-frontier/url-extractor.js`
    - Command: `node ./URL-frontier/url-extractor.js`
    - Output Check: Ensure `profiles_groups.json` is created in the `./URL-frontier` directory.
-   - Purpose: Extracts URLs for further processing.
+   - Purpose: Extracts URLs and saves them for further processing.
 
 2. **Scrape Profiles from URLs**
    - Script: `scrapeProfilesFromUrls.js`
@@ -37,14 +63,14 @@ This project is aimed at scraping LinkedIn profiles, extracting relevant informa
    - Location: `./fetcher-extractor/filterMajor.js`
    - Command: `node ./fetcher-extractor/filterMajor.js`
    - Output Check: Ensure `ProfilesWithEducation_Major_Filtered.json` is created in the `./fetcher-extractor` directory.
-   - Purpose: Filters profiles based on major.
+   - Purpose: Filters the profiles to include only certain majors.
 
 5. **Filter by Institute Name**
    - Script: `filterInstituteName.js`
    - Location: `./fetcher-extractor/filterInstituteName.js`
    - Command: `node ./fetcher-extractor/filterInstituteName.js`
    - Output Check: Ensure `ProfilesWithEducation_InstitueName_Major_Filtered.json` is created in the `./fetcher-extractor` directory.
-   - Purpose: Filters profiles based on educational institutions.
+   - Purpose: Filters the profiles to include only certain educational institutions.
 
 6. **Scrape Professional Experience Information**
    - Script: `scrapeExperience.js`
@@ -55,16 +81,32 @@ This project is aimed at scraping LinkedIn profiles, extracting relevant informa
 
 7. **Start backend server**
    - Navigate to `DATASTORE` directory
-   - Command: `node index.js &` (to let server run in the background and continue)
+     
+     ```
+     cd DATASTORE
+     ```
+   - Command:
+     ```
+     node index.js
+     ```
+     And let the server run in the background.
 
 8. **Post Data to Database**
    - Script: `postToDataBase.js`
    - Location: `./fetcher-extractor/postToDataBase.js`
    - Command: `node ./fetcher-extractor/postToDataBase.js`
-   - Purpose: Uploads the final filtered and enriched profile data to a database.
+   - Purpose: POST the final filtered and enriched profile data to a database.
 
-9. **Run Datastore and Visualization**
-   - Execute `datastore-frontend/run_datastore_frontend.sh`
+9. **Run Visualization**
+   - Navigate to `VISUALISATION_Linkedin/linkedin-app` directory
+     
+     ```
+     cd VISUALISATION_Linkedin/linkedin-app
+     ```
+   - Command:
+     ```
+     npm start
+     ```
 
 ## Conclusion
 
