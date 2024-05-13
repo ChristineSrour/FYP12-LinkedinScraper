@@ -4,6 +4,7 @@ chmod +x run.sh
 
 Run datastore and visualisation seperately by :
 
+chmod +x run_DF.sh
 ./datastore-frontend/run_DF.sh
 
 In case this didn't work, this is a manual step by step
