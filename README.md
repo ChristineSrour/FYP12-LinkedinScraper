@@ -60,7 +60,7 @@ Execution Order and Instructions:
 •	Command: node ./fetcher-extractor/postToDataBase.js
 •	Purpose: Uploads the final filtered and enriched profile data to a database.
 9. Run Datastore and Visualisation
-•	datastore-frontend/run_DF.sh 
+•	datastore-frontend/run_datastore_frontend.sh 
 
 Conclusion: Follow this guide to manually execute each script in the specified order. Ensure that each script's output file is correctly produced before proceeding to the next step to maintain data integrity and flow consistency.
 
