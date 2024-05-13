@@ -1,0 +1,73 @@
+[
+  {
+    "url": "https://www.linkedin.com/in/christine-boulos-219a152a/",
+    "name": "Christine Boulos",
+    "bio": "Deputy Operations Manager at BMB Saudi Arabia",
+    "location": "Saudi Arabia",
+    "coordinates": [
+      25.6242618,
+      42.3528328
+    ],
+    "Education": [
+      {
+        "instituteName": "Ecole Supérieure des Ingénieurs de Beyrouth ESIB - Université Saint Joseph USJ",
+        "major": "Telecommunication and Networks Engineer",
+        "dates": "2000 - 2005"
+      }
+    ]
+  },
+  {
+    "url": "https://www.linkedin.com/in/yamen-saleh-15b0247a/",
+    "name": "Yamen Saleh",
+    "bio": "Senior Sales Manager at Eternity Technologies",
+    "location": "Dubai, United Arab Emirates",
+    "coordinates": [
+      25.2653471,
+      55.2924914
+    ],
+    "Education": [
+      {
+        "instituteName": "ESIB - Ecole Superieure des Ingenieurs de Beirut",
+        "major": "Master of Engineering (MEng), Telecommunications & Networking",
+        "dates": "2000 - 2005"
+      },
+      {
+        "instituteName": "College des Freres",
+        "major": "Lebanese Baccalaureate, Sciences Experimentales",
+        "dates": "1999"
+      }
+    ]
+  },
+  {
+    "url": "https://www.linkedin.com/in/wassimcortbaoui/",
+    "name": "Wassim Cortbaoui",
+    "bio": "Finance Director at GE Vernova",
+    "location": "United Arab Emirates",
+    "coordinates": [
+      24.0002488,
+      53.9994829
+    ],
+    "Education": [
+      {
+        "instituteName": "ESSEC Business School",
+        "major": "Advanced Master, Strategy and Management of International Business",
+        "dates": "2008 - 2010"
+      },
+      {
+        "instituteName": "Thunderbird School of Global Management",
+        "major": "Certificate of Advanced Studies, Global Management",
+        "dates": "2009 - 2009"
+      },
+      {
+        "instituteName": "Saint Joseph University of Beirut",
+        "major": "Bachelor of Engineering, Telecommunications and Networks",
+        "dates": "2000 - 2005"
+      },
+      {
+        "instituteName": "Champville",
+        "major": "High School",
+        "dates": "1986 - 2000"
+      }
+    ]
+  }
+]

@@ -1,0 +1,4 @@
+[
+  { "id": 1, "country": "USA", "major": "Computer Science", "graduationYear": 2020, "position": [37.7749, -122.4194] },
+  { "id": 2, "country": "Canada", "major": "Chemistry", "graduationYear": 2021, "position": [45.4215, -75.6972] }
+]
