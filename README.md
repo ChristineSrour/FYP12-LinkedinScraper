@@ -2,6 +2,10 @@ To run the project,
 chmod +x run.sh
 ./run.sh
 
+Run datastore and visualisation seperately by :
+
+./datastore-frontend/run_DF.sh
+
 In case this didn't work, this is a manual step by step
 
 Prerequisites:
@@ -54,5 +58,8 @@ Execution Order and Instructions:
 •	Location: ./fetcher-extractor/postToDataBase.js
 •	Command: node ./fetcher-extractor/postToDataBase.js
 •	Purpose: Uploads the final filtered and enriched profile data to a database.
+12. Run Datastore and Visualisation
+•	datastore-frontend/run_DF.sh 
+
 Conclusion: Follow this guide to manually execute each script in the specified order. Ensure that each script's output file is correctly produced before proceeding to the next step to maintain data integrity and flow consistency.
 
