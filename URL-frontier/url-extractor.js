@@ -10,9 +10,9 @@ async function scrape(maximumMembers) {
   try {
     await page.goto('https://www.linkedin.com');
     await page.waitForSelector('#session_key');
-    await page.type('#session_key', 'ranimeelzein@outlook.com');
+    await page.type('#session_key', 'arthurlancord@gmail.com');
     await page.waitForSelector('#session_password');
-    await page.type('#session_password', 'Ranouma0205$$@@');
+    await page.type('#session_password', '`V?#55CIJM("|+@');
     await page.waitForSelector('.sign-in-form__submit-btn--full-width');
     await page.click('.sign-in-form__submit-btn--full-width');
     await page.waitForNavigation();
