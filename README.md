@@ -1,3 +1,8 @@
+Full Stack Linkedin Scaper Project README:
+
+Check out Data.json file that contains all the content of our current database
+
+
 To run the project, 
 chmod +x run.sh
 ./run.sh
