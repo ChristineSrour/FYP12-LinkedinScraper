@@ -1,15 +1,25 @@
-**Datastore Module Documentation**
+# Datastore Module
 
-**Dependencies**
+## Dependencies
 
-Install necessary dependencies by running the following command:
-```npm install dotenv express mongoose cors```
+1. **dotenv**
+   - A zero-dependency module that loads environment variables from a `.env` file into `process.env`.
+   - Version: ^16.4.5
+   
+2. **express**
+   - Fast, unopinionated, minimalist web framework for Node.js.
+   - Version: ^4.18.3
+   
+3. **mongoose**
+   - MongoDB object modeling tool designed to work in an asynchronous environment.
+   - Version: ^8.2.2
+   
+4. **cors**
+   - Middleware for enabling Cross-Origin Resource Sharing (CORS) in Express.js.
+   - Version: ^2.8.5
 
-**Run**
 
-Run `datastore.bat`
-
-**How It Works**
+## How It Works
 
 **Database Connection**
 - The module establishes a connection to a MongoDB database using Mongoose.
@@ -20,47 +30,58 @@ Run `datastore.bat`
 - CORS middleware is used to enable cross-origin resource sharing.
 - The server listens on port 3000 by default.
 
-**Routes**
-- The module defines routes for interacting with the data stored in the database.
+### Routes
+The module defines routes for interacting with the data stored in the database.
 
-POST /api/post
+**POST /api/post**
 - This route handles the creation or update of user data.
 - It expects a JSON payload containing user information such as URL, name, bio, location, coordinates, education, and experience.
 - If a user with the same URL already exists in the database, the route updates the user's information if any changes are detected.
 - If no user with the same URL exists, a new user is created in the database.
 
-GET /api/getAll
+**GET /api/getAll**
 - This route retrieves all user data from the database.
 
-**Model**
+### Model
 - The module defines a Mongoose model for user data storage.
 - The model schema includes fields for URL, name, bio, location, coordinates, education, and experience.
 - Coordinates are stored as an array of numbers representing latitude and longitude.
 - Education and experience are stored as arrays of objects containing information about institutes, majors, positions, companies, and dates.
 
-**Functionality Highlights**
+## Functionality Highlights 
 - Database Interaction: Users can save or update their information, which is stored in a MongoDB database.
 - RESTful API: Routes adhere to REST principles, providing clear endpoints for CRUD operations.
 - Data Validation: User input is validated before saving to the database using Mongoose schema validation.
 
 
-**Visualization Module Documentation**
+# Visualization Module
 
-**Dependencies**
+## Dependencies
 
-Install React Leaflet and Axios: 
-```npm install react-leaflet axios leaflet```
+1. **react**
+   - Description: A JavaScript library for building user interfaces.
+   - Version: ^18.2.0
 
-**Run**   
+2. **react-leaflet**
+   - Description: A React library for building interactive maps using Leaflet.
+   - Version: ^4.2.1
 
-Run `visualization.bat`
+3. **axios**
+   - Description: A promise-based HTTP client for the browser and Node.js.
+   - Version: ^1.6.8
 
-**Features**
+4. **leaflet**
+   - Description: A JavaScript library for interactive maps.
+   - Version: ^1.9.4
+
+
+
+## Features
 - Displays a map with markers representing individuals.
 - Allows users to filter individuals based on location, major, graduation year, and company.
 - Sidebar displays details of individuals in a selected location, with an option to redirect to that person's LinkedIn profile.
 
-**How It Works**
+## How It Works
 
 **State Management**
 
@@ -98,7 +119,7 @@ The component utilizes React's `useState` hook to manage various states:
 - It renders individual names, majors, and graduation years.
 - Clicking the close button (`closeSidebar` function) closes the sidebar.
 
-**Functionality Highlights**
+## Functionality Highlights
 
 - Filtering: Users can filter individuals based on location, major, graduation year, and company.
 - Interactive Map: Clicking on markers displays detailed information about individuals in the sidebar.
