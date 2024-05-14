@@ -25,7 +25,7 @@ This project is aimed at scraping LinkedIn profiles, extracting relevant informa
      chmod +x run_datastore_frontend.sh
      ```
      ```
-     ./datastore-frontend/run_DF.sh
+     ./datastore-frontend/run_datastore_frontend.sh
      ```
 In case this didn't work, this is a manual step by step
 
